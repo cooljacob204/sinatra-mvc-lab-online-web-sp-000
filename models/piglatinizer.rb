@@ -1,6 +1,6 @@
 class PigLatinizer
   def piglatinize(sentence)
-    sentence.split(" ")
+    sentence.split(" ").map {|i| piglatinize_word(i)}
   end
   
   private
@@ -8,7 +8,7 @@ class PigLatinizer
   def piglatinize_word(word)
     return word + 'way' if /^[aeiouAEIOU]/.match?(word)
     
-    start = /^[^aeiou]*/.match(word).to_s
+    start = /^[^aeiouAEIOU]*/.match(word).to_s
     
     return word.sub(/^[^aeiou]*/, '') + start + 'ay'
   end
