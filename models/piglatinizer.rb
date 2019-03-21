@@ -12,5 +12,4 @@ class PigLatinizer
     
     return word.sub(/^[^aeiouAEIOU]*/, '') + start + 'ay'
   end
-  
 end
