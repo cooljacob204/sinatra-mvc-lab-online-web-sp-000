@@ -10,7 +10,7 @@ class PigLatinizer
     
     start = /^[^aeiouAEIOU]*/.match(word).to_s
     
-    return word.sub(/^[^aeiou]*/, '') + start + 'ay'
+    return word.sub(/^[^aeiouAEIOU]*/, '') + start + 'ay'
   end
   
 end
