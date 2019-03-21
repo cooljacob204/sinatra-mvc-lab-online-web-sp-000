@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
@@ -6,9 +6,6 @@
   </head>
   <body>
     <h1>Pig Latinizer</h1>
-    <form>
-      <h1>Word:<input type='text' name='word'></h1>
-      <input id='Submit' type='submit'>
-    </form>
+    <p>Results: <%=PigLatinizer.convert_to_piglatin(params[:word]) %></p>
   </body>
 </html>
