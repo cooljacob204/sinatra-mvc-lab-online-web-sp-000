@@ -1,6 +1,6 @@
 class PigLatinizer
   def piglatinize(sentence)
-    
+    sentence.split(" ")
   end
   
   private
