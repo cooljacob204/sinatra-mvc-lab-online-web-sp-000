@@ -1,6 +1,6 @@
 class PigLatinizer
-  def piglatinize(sentence)
-    sentence.split(" ").map {|i| piglatinize_word(i)}.join(" ")
+  def piglatinize(phrase)
+    phrase.split(" ").map {|i| piglatinize_word(i)}.join(" ")
   end
   
   private
